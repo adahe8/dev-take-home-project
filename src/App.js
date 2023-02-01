@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import EventList from "./EventList";
 
 const API_BASE_URL = "https://api.acmucsd.com/api/v2";
 
@@ -13,7 +12,7 @@ export default function App() {
       .then((data) => {
         console.log(data);
         //setEvents(data.events[]);
-        setEvents(["ACM event 1","ACM event 2","ACM event 3"]);
+        setEvents(data.events);
         console.log(events);
         console.log(data.events);
       });
@@ -25,7 +24,9 @@ export default function App() {
       <div className="view-events">
         <table>
           {events.map((events) => {
-            return <EventList pastEvents={events} />;
+            return (
+              <li key={events.id}>{events.title}</li>
+            )
           })}
           ;
         </table>
