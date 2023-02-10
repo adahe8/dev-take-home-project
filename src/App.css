@@ -1,3 +1,4 @@
+
 .App{
   height: 100%;
   width: 100%;
@@ -8,4 +9,10 @@
   font-weight: 300;
   letter-spacing: 0;
   line-height: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
+
+

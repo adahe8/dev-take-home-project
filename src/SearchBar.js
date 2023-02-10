@@ -1,9 +1,32 @@
 import React from "react";
 
+const SearchBar = ({pastEventPosts, setSearchResults}) => {
+  const handleSubmit = (e) => e.preventDefault();
+  const handleChange = (e) => {
+    if (!e.target.value) return setSearchResults(pastEventPosts);
+
+    const searchReturns = pastEventPosts.filter(pastEvent => pastEvent.title.includes(e.target.value)
+    ||pastEvent.description.includes(e.target.value))
+
+    setSearchResults(searchReturns);
+  }
+
+  return (
+    <header>
+      <form className="search-bar" onSubmit={handleSubmit}>
+        <input className="search_input"
+        type="text" id="search"
+        onChange={handleChange}
+        />
+      </form>
+    </header>
+  )
+}
+/*
 const SearchBar = ({keyword,onChange}) => {
   return (<input key="search-bar" placeholder="search events..." value={keyword} onChange={(e) => onChange(e.target.value)}/>);
 }
-
+*/
 export default SearchBar;
 
 /*
