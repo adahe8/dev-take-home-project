@@ -1,0 +1,11 @@
+.App{
+  height: 100%;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  font-family: europa-light, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 32px;
+}
