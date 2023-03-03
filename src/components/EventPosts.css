@@ -6,15 +6,6 @@ p{
     color:white; 
 }
 
-.event{  
-    /*
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-    align-content: center;
-    */
-}
 
 h3:hover{
     cursor:pointer;
@@ -37,6 +28,7 @@ img:hover{
     padding:1.2rem 1.2rem;
     background-color: #19202E;
     background-image: linear-gradient(#F72585,#4CC9F0);
+    height: 600px;
 }
 
 /*

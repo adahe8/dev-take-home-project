@@ -17,6 +17,7 @@ const SearchBar = ({pastEventPosts, setSearchResults}) => {
       <form className="search-bar" onSubmit={handleSubmit}>
         <input className="search_input"
         type="text" id="search"
+        placeholder="Search past events..."
         onChange={handleChange}
         />
       </form>

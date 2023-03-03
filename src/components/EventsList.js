@@ -1,4 +1,5 @@
 import EventPost from "./EventPosts";
+import "./EventList.css";
 
 const EventsList = ({ searchResults }) => {
 
