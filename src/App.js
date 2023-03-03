@@ -1,7 +1,8 @@
 import { getEvents } from './api/API';
 import React, { useState, useEffect } from "react";
-import EventsList from "./EventsList";
-import SearchBar from './SearchBar';
+import EventsList from "./components/EventsList";
+import SearchBar from './components/SearchBar';
+import SortButtons from './components/SortButtons';
 import "./App.css";
 
 /*const API_BASE_URL = "https://api.acmucsd.com/api/v2";*/
@@ -9,6 +10,10 @@ import "./App.css";
 function App() {
   const [events, setEvents] = useState([]);
   const [searchResults, setSearchResults]=useState([]);
+  const [buttons, setButtons]=useState([]);
+
+
+  
   /*
   const [allPastEvents, setAllPastEvents] = useState([]);
   const [keyword, setKeyword] = useState('');
@@ -44,8 +49,9 @@ function App() {
 
   return (
     <div className="App">
-      <h1>ACM Past Events</h1>
+      <h1 className="title">ACM Past Events</h1>
       <SearchBar pastEventPosts={events} setSearchResults={setSearchResults}/>
+      <SortButtons />
       <EventsList searchResults= {searchResults}/>
     </div>
   );

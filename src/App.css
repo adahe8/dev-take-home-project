@@ -1,4 +1,10 @@
 
+*{
+  margin:0;
+  padding:1rem;
+  box-sizing: border-box;
+}
+
 .App{
   height: 100%;
   width: 100%;
@@ -9,10 +15,17 @@
   font-weight: 300;
   letter-spacing: 0;
   line-height: 32px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
 }
 
+body{
+  font-family: 'Varela Round', sans-serif;
+  color: white;
+  background-color: #10121B;
+  text-align: center;
+  text-decoration: none;
+}
 
+.title{
+  padding: 5rem 0;
+  text-align: center;
+}

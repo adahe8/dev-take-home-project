@@ -1,0 +1,56 @@
+a{
+    text-decoration: none;
+}
+
+p{
+    color:white; 
+}
+
+.event{  
+    /*
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    */
+}
+
+h3:hover{
+    cursor:pointer;
+    transition: all .3s ease-in-out;
+    color: #037FFF;
+}
+
+img{
+    width: 100%;
+    display: block;
+    padding:10px;
+    position: center;
+}
+
+img:hover{
+    transform: scale(1.1);
+}
+
+.card{
+    padding:1.2rem 1.2rem;
+    background-color: #19202E;
+    background-image: linear-gradient(#F72585,#4CC9F0);
+}
+
+/*
+.event-container > img{
+    width: 100%;
+    transition: all .3s ease-in-out;
+}
+*/
+
+.long{
+    width: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding:10px;
+    
+}

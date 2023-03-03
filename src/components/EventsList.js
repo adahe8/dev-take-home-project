@@ -2,7 +2,7 @@ import EventPost from "./EventPosts";
 
 const EventsList = ({ searchResults }) => {
 
-    const results = searchResults.map(post => <EventPost key={post.uuid} post={post} />)
+    const results = searchResults.map( post => <EventPost key={post.uuid} post={post} />)
 
     const showContent = results?.length ? results : <article><p>No Matches</p></article>
 
